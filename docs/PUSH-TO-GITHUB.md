@@ -12,15 +12,20 @@ The repo is initialized locally. To push to GitHub:
 
 2. **Add the remote and push** (run in this project folder):
 
+   Replace **your-github-username** below with your actual GitHub username (e.g. `jane-doe`), then run:
+
    ```powershell
    cd c:\learning\cursor\java
 
-   git remote add origin https://github.com/YOUR_USERNAME/orderflow.git
+   git remote add origin https://github.com/your-github-username/orderflow.git
    git branch -M main
    git push -u origin main
    ```
 
-   Replace `YOUR_USERNAME` with your GitHub username. If you used a different repo name, use that instead of `orderflow`.
+   If you already added `origin` with the wrong URL, fix it first:
+   ```powershell
+   git remote set-url origin https://github.com/your-github-username/orderflow.git
+   ```
 
 3. **If GitHub asks for auth**: use a [Personal Access Token](https://github.com/settings/tokens) as the password when prompted, or set up [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager).
 
