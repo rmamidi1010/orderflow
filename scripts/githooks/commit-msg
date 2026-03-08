@@ -1,0 +1,8 @@
+#!/bin/sh
+# Strip "Made-with: Cursor" trailer from commit messages.
+# To install: copy to .git/hooks/commit-msg or set core.hooksPath to scripts/githooks
+msgfile="$1"
+if [ -f "$msgfile" ]; then
+  grep -v -i "Made-with: Cursor" "$msgfile" > "$msgfile.tmp" && mv "$msgfile.tmp" "$msgfile"
+fi
+exit 0

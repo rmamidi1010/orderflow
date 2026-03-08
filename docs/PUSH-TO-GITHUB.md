@@ -41,3 +41,13 @@ The repo is initialized locally. To push to GitHub:
    ```
 
 Use `--private` instead of `--public` if you want a private repo.
+
+## Optional: strip "Made-with: Cursor" from commits
+
+To keep commit messages free of that trailer, use the project’s hook:
+
+```powershell
+copy scripts\githooks\commit-msg .git\hooks\commit-msg
+```
+
+Or use the githooks folder as your hooks path: `git config core.hooksPath scripts/githooks`
