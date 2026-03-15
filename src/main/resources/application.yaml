@@ -1,0 +1,8 @@
+# Orderflow app config (Stage 1)
+app:
+  name: Orderflow
+  env: dev
+
+catalog:
+  defaultPageSize: 10
+  currency: USD
