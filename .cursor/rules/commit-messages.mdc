@@ -6,5 +6,6 @@ alwaysApply: true
 # Commit Messages
 
 - Write clear, concise commit messages that describe the change.
-- Do **not** add "made with Cursor", "built with Cursor", or any Cursor/IDE branding to commit messages.
+- Do **not** mention Cursor (or similar IDE branding) anywhere in the commit subject or body.
 - Do not append tool or product names to commits unless they are technically relevant (e.g. "Upgrade Maven plugin").
+- When the user asks to commit each file separately: one `git add` + one `git commit` per file, then push.
